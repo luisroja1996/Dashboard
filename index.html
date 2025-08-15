@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Responsive</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <h1>Dashboard</h1>
+    <div class="header-actions">
+    <button id="theme-toggle" class="icon-button">
+        <span class="material-icons">dark_mode</span>
+    </button>
+    <button class="menu-toggle"><span class="material-icons">menu</span></button>
+        </div>
+    <header class="header">
+        <h1>Dashboard</h1>
+        <button class="menu-toggle"><span class="material-icons">menu</span></button>
+    </header>
+
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li><a href="#" class="active"><span class="material-icons">dashboard</span> Panel</a></li>
+                <li><a href="#"><span class="material-icons">bar_chart</span> Analíticas</a></li>
+                <li><a href="#"><span class="material-icons">settings</span> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main-content">
+        <div class="card">
+            <h2>Ventas Diarias</h2>
+            <p>$1,250</p>
+        </div>
+        <div class="card">
+            <h2>Ingresos Totales</h2>
+            <p>$15,500</p>
+        </div>
+        <div class="card">
+            <h2>Usuarios Nuevos</h2>
+            <p>120</p>
+        </div>
+        </main>
+
+    <script src="script.js"></script>
+
+    <div class="card chart-card">
+        <h2>Ventas Mensuales</h2>
+        <canvas id="monthlySalesChart"></canvas>
+    </div>
+    
+    <div class="card chart-card">
+        <h2>Usuarios por Dispositivo</h2>
+        <canvas id="deviceUsersChart"></canvas>
+    </div>
+</body>
+</html>
